@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!--<bean class="com.xworkz.fuel.app.Fuel" id="fuel" >
+	<constructor-arg value="2"/>
+	
+	</bean>
+	
+	<bean class="com.xworkz.fuel.app.Sattelite" id="sattelite" >
+	<property name="Lanched" value="12"/>
+	<property name="Location" value="shriharikota"/>
+	</bean>
+	
+	 <bean class="com.xworkz.fuel.app.Rocket" id="rocket" >
+	<constructor-arg ref="fuel"/>
+	<property name="Sat" ref="sattelite"/>
+	<property name="CountryName" value="India"/>
+	</bean>-->
+	
+	<bean class="com.xworkz.fuel.app.ThreadImpl" id="threadImpl" ></bean>
+	<bean class="com.xworkz.fuel.app.Labour" id="labour" >
+	<constructor-arg value="gghgh"/>
+	<property name="Expereance" value="343"/>
+	<property name="ThreadImpl" ref="threadImpl"/>
+	</bean>
+	
+
+
+	
+	</beans>
